@@ -1,9 +1,38 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/style.css">
 	</head>
 	<body>
-		<p>"Hello"</p>
-		<%= yield %>
+		<div class="container">
+			<header class="nav row">
+				<div class="col-md-4">
+					<ul>
+						<li>Home</li>
+						<li>Notifications</li>
+						<li>Messages</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<p>LOGO</p>
+				</div>
+				<div class="col-md-4">
+					<p>new tweet?</p>
+				</div>
+			</header>
+			<div class="content row">
+				<div class="left_bar col-md-3">
+					<p>left sidebar</p>
+				</div>
+				<div class="growl_box col-md-6">
+					<%= yield %>
+				</div>
+				<div class="right_bar col-md-2">
+					<p>right sidebar</p>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

@@ -1,14 +1,28 @@
 header {
 	background-color: #b89133
 }
-
-#head_nav ul {
+.nav {
+	padding top: 45px;
+}
+.nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-#head_nav li {
+.nav li {
     display: inline;
     padding-top: 45px;
+}
+
+.growl_box {
+	border: 1px solid black;
+}
+
+.left_bar {
+	background: green;
+}
+
+.right_bar {
+	background: blue;
 }

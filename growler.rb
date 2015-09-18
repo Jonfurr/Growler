@@ -17,8 +17,8 @@ get '/new_post' do
 end
 
 post '/new_post' do
-	session[:text] = params[:text]
-	@text = session[:text]
+	session["text"] = params["text"]
+	@text = session["text"]
 	erb :new_post
 end
 

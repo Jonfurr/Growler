@@ -4,6 +4,7 @@ require 'sinatra/reloader'
 enable :sessions
 
 
+
 get '/' do
   	# session[:message] = 'Hello World!'
   	# redirect to('/new_post')
@@ -17,8 +18,9 @@ get '/new_post' do
 end
 
 post '/new_post' do
-	session[:text] = params[:text]
-	@text = session[:text]
+	session[:list] ||= []
+	session[:list] << params[:text]
+	@list = session[:list]
 	erb :new_post
 end
 

@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="../css/style.css">
 	</head>
 	<body>
-		<div class="container">
+		<div class="section">
 			<header class="nav row">
 				<div class="col-md-4">
 					<ul>
@@ -22,14 +22,16 @@
 					<p>new tweet?</p>
 				</div>
 			</header>
-			<div class="content row">
+			<div class="section">
 				<div class="left_bar col-md-3">
 					<p>left sidebar</p>
 				</div>
 				<div class="growl_box col-md-6">
-					<%= yield %>
+					<ul>
+						<%= yield %>
+					</ul>
 				</div>
-				<div class="right_bar col-md-2">
+				<div class="right_bar col-md-3">
 					<p>right sidebar</p>
 				</div>
 			</div>

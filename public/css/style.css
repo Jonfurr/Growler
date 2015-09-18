@@ -1,0 +1,14 @@
+header {
+	background-color: #b89133
+}
+
+#head_nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#head_nav li {
+    display: inline;
+    padding-top: 45px;
+}

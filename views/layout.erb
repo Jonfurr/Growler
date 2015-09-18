@@ -1,10 +1,30 @@
+<!DOCTYPE HTML>
 <html>
 	<head>
-		
+		<link rel="stylesheet" href="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/style.css">
 	</head>
 	<body>
-		
-		<%= yield %>
-	
+		<div class="container">
+			<header class="row">
+				<div class="col-md-4">
+					<ul id="head_nav">
+						<li>Home</li>
+						<li>Notifications</li>
+						<li>Messages</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+
+				</div>
+				<div class="col-md-4">
+
+				</div>
+			</header>
+
+			<%= yield %>
+			
+		</div>
 	</body>
 </html>
